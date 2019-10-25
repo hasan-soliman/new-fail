@@ -1,15 +1,3 @@
 language: cpp
 compiler: gcc
 dist: trusty
-
-before_install:
-  - sudo add-apt-repository -y ppaubuntu-toolchain-rtest
-  - sudo apt-get update -qq
-
-install :
-  - sudo apt-get install -qq g++-6
-  - sudo update-alternatives --install usrbing++ g++ usrbing++-6 90
-
-script :
-  - g++ main.cpp -std=c++17 -o travis_gcc_cpp17
-  - .travis_gcc_cpp17
