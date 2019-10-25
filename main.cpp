@@ -1,7 +1,7 @@
-#include iostream
+#include <iostream>
 
 int main() 
 {
-  static_assert(C++17);
-  stdcout  Hello worldn;
+  std :: cout<< " hello";
+  return 0;
 }
